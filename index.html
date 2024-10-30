@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio</title>
+  <style>
+    /* Styles globaux */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    /* En-tête */
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    nav ul {
+      list-style: none;
+      margin-top: 1rem;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    /* Sections */
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 2rem auto;
+    }
+    h2 {
+      color: #333;
+      margin-bottom: 1rem;
+    }
+    /* Projets */
+    .project {
+      margin-bottom: 1.5rem;
+    }
+    .project h3 {
+      margin-bottom: 0.5rem;
+    }
+    /* Formulaire de contact */
+    form label {
+      display: block;
+      margin: 0.5rem 0 0.2rem;
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    form button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    /* Pied de page */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #333;
+      color: #fff;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- En-tête avec nom et navigation -->
+  <header>
+    <h1>Mon Nom</h1>
+    <p>Développeur Web | Créateur de solutions digitales</p>
+    <nav>
+      <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section À propos -->
+  <section id="about">
+    <h2>À propos de moi</h2>
+    <p>Je suis un développeur passionné, spécialisé en [votre spécialité]. J'aime transformer des idées en applications fonctionnelles et esthétiques.</p>
+  </section>
+
+  <!-- Section Projets -->
+  <section id="projects">
+    <h2>Projets</h2>
+    <div class="project">
+      <h3>Projet 1</h3>
+      <p>Description de votre premier projet.</p>
+    </div>
+    <div class="project">
+      <h3>Projet 2</h3>
+      <p>Description de votre deuxième projet.</p>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact">
+    <h2>Contactez-moi</h2>
+    <form id="contactForm">
+      <label for="name">Nom</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>&copy; 2024 Mon Nom. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    // JavaScript pour une confirmation de l'envoi du formulaire
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Empêche l'envoi réel pour tester
+      alert("Merci pour votre message ! Je vous répondrai bientôt.");
+    });
+  </script>
+
+</body>
+</html>
